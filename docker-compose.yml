@@ -76,7 +76,7 @@ services:
       args:
         ELASTIC_VERSION: ${ELASTIC_VERSION}
     volumes:
-      - ./apm/config/apm-server.yml:/usr/share/apm-server/apm-server.yml:ro
+      - ./apm/config/apm-server.yml:/usr/share/apm-server/apm-server_2.yml:ro,Z
     depends_on:
       - elasticsearch
       - kibana
